@@ -1,0 +1,100 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  
+
+  .Resultcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(27, 27, 27); */
+    box-shadow: 0 10px 10px rgba(255, 255, 255, 0.1);
+
+    padding: 20px;
+    border-radius: 15px;
+    width: 50%;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+
+  .Resultcontainer.fadeOut {
+    animation: fadeOut 1s ease-in-out forwards;
+  }
+  
+  .wpm, .characters, .time {
+    margin: 10px 0;
+    text-align: center;
+    color: #D7D2BC;
+  }
+  
+  .wpm .div, .characters .char, .time .tm {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .container1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .characters, .time {
+    flex: 1;
+    margin: 0 5px;
+  }
+  
+  label {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #8F8E84;
+  }
+  
+  .correctNc {
+      color: aquamarine;
+}
+
+.wrongNw {
+      color:#FF4A59;
+  }
+  
+  .icon-button{
+    width: 50px;
+    height:50px;
+  }
+  .icon-button:hover{
+        background-color: #838383;
+        color: black;
+        size: 3rem;
+        border-radius: 7px;
+  }
+
+   .icon-button .fa {
+    font-size: inherit; 
+  } 
+
+  .seconds{
+    /* color:rgb(139, 215, 24);
+     */
+     color : aquamarine
+  }

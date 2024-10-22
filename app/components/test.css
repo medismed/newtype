@@ -1,0 +1,64 @@
+.containerTest {
+    display: flex;
+    flex-wrap: wrap; /* Allows the divs to wrap to the next line */
+    gap: 5px; /* Optional: adds space between the divs */
+    width: 100%; /* Or specify a max-width if needed */
+    padding:100px ;
+    /* background-color: gray; */
+  }
+  
+  .cell {
+    width: 15px; 
+    height: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #ccc;  */
+    box-sizing: border-box;
+    font : 32px  "Roboto Mono", "Roboto Mono", "Vazirmatn", monospace ;
+    color:#8F8E84;
+    /* color: white; */
+    margin-bottom: 10px;
+    position: relative;
+
+
+  }
+  
+  .wrong{
+    color:#FF4A59;
+  }
+  .correct{
+    /* color: #D7D2BC; */
+    color: aquamarine;
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      border-bottom-width: 0;
+      border-bottom-color: transparent;
+    }
+    50% {
+      border-bottom-width: 3px;
+      border-bottom-color: white;
+    }
+    100% {
+      border-bottom-width: 0;
+      border-bottom-color: transparent;
+    }
+    0% {
+      border-bottom-width: 0;
+      border-bottom-color: transparent;
+    }
+    50% {
+      border-bottom-width: 3px;
+      border-bottom-color: white;
+    }
+    100% {
+      border-bottom-width: 0;
+      border-bottom-color: transparent;
+    }
+  }
+
+  .indexed {
+    animation: borderAnimation 1s ease-in-out infinite;
+  }

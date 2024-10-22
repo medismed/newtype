@@ -1,0 +1,46 @@
+body {
+  background: #2f3338;
+  color: white;
+  font: 20px "Roboto Mono", "Roboto Mono", "Vazirmatn", monospace;
+  color: #8f8e84;
+}
+
+.lcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.lusername {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.lpassword {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.lbutton {
+  background-color: #8f8e84;
+  margin-top: 10px;
+  width: 100px;
+  border-radius: 7px;
+  color: white;
+  padding: 2px;
+}
+
+.ll 
+{
+  margin-top:19px;
+  text-decoration: underline;
+  color: #8f8e84;
+}
